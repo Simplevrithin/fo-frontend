@@ -20,9 +20,9 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page)
 
-  const title = `Admin One React Tailwind free`
+  const title = `Simplevrithin`
 
-  const description = 'Admin One - free React Next Tailwind dashboard with TypeScript and dark mode'
+  const description = 'Simplevrithin - Streamline your restaurant operations'
 
   const url = 'https://justboil.github.io/admin-one-react-tailwind/'
 
@@ -57,20 +57,6 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
             <link rel="icon" href="/admin-one-react-tailwind/favicon.png" />
           </Head>
-
-          <Script
-            src="https://www.googletagmanager.com/gtag/js?id=UA-130795909-1"
-            strategy="afterInteractive"
-          />
-
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'UA-130795909-1');
-            `}
-          </Script>
 
           <Component {...pageProps} />
         </>
