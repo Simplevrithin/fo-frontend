@@ -1,28 +1,17 @@
-import {
-  mdiAccountCircle,
-  mdiMonitor,
-  mdiGithub,
-  mdiLock,
-  mdiAlertCircle,
-  mdiSquareEditOutline,
-  mdiTable,
-  mdiViewList,
-  mdiTelevisionGuide,
-  mdiResponsive,
-  mdiPalette,
-  mdiVuejs,
-} from '@mdi/js'
+import { mdiMonitor, mdiStorageTank } from '@mdi/js'
 import { MenuAsideItem } from './interfaces'
 
-const menuAside: MenuAsideItem[] = [{
-  href: '/dashboard',
+const menuAside: MenuAsideItem[] = [
+  {
+    href: '/dashboard',
     icon: mdiMonitor,
-    label: 'Dashboard'
-},{
-  href: '/inventories',
-  icon: mdiViewList,
-  label: 'Inventories',
-}
+    label: 'Dashboard',
+  },
+  {
+    href: '/inventories',
+    icon: mdiStorageTank,
+    label: 'Inventories',
+  },
   // {
   //   href: '/dashboard',
   //   icon: mdiMonitor,
